@@ -15,7 +15,13 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_createAction_triggered();
+
 private:
     Ui::MainWindow *ui;
+    void initMainWindow();
+    void createDocument();
+    void formatEnable();
 };
 #endif // MAINWINDOW_H
