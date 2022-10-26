@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>QtEditor</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QComboBox" name="comboBox">
@@ -95,7 +95,7 @@
       <x>0</x>
       <y>20</y>
       <width>1301</width>
-      <height>651</height>
+      <height>631</height>
      </rect>
     </property>
    </widget>
@@ -162,7 +162,7 @@
     </property>
     <addaction name="closeAction"/>
     <addaction name="closeAllAction"/>
-    <addaction name="titleAction"/>
+    <addaction name="tileAction"/>
     <addaction name="cascadeAction"/>
     <addaction name="nextAction"/>
     <addaction name="previousAction"/>
@@ -208,6 +208,7 @@
    <addaction name="alignCenterAction"/>
    <addaction name="alignRightAction"/>
    <addaction name="exitaction"/>
+   <addaction name="colorAction"/>
    <addaction name="separator"/>
   </widget>
   <action name="createAction">
@@ -350,6 +351,9 @@
    </property>
   </action>
   <action name="boldAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="images.qrc">
      <normaloff>:/images/font_bold.png</normaloff>:/images/font_bold.png</iconset>
@@ -359,6 +363,9 @@
    </property>
   </action>
   <action name="italicAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="images.qrc">
      <normaloff>:/images/font_italic.png</normaloff>:/images/font_italic.png</iconset>
@@ -368,6 +375,9 @@
    </property>
   </action>
   <action name="underLineAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="images.qrc">
      <normaloff>:/images/font_underline.png</normaloff>:/images/font_underline.png</iconset>
@@ -418,7 +428,7 @@
     <string>关闭所有(&amp;A)</string>
    </property>
   </action>
-  <action name="titleAction">
+  <action name="tileAction">
    <property name="text">
     <string>平铺(&amp;T)</string>
    </property>
